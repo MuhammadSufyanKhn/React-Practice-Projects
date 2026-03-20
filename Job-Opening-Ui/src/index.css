@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #111;
+    margin: 15px 25px;
+}
+.parent{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+button {
+    cursor: pointer;
+}
+
+.child {
+    width: 320px;
+    min-height: 400px;
+    background-color: #fff;
+    border-radius: 35px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.top {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.top img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #e5e5e5;
+    object-fit: cover; 
+    padding: 2px;
+}
+
+.top button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    padding: 8px 12px;
+    font-size: 13px;
+    border-radius: 8px;
+    gap: 6px;
+    background-color: #fff;
+    color: #666;
+    font-weight: 500;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px; 
+}
+
+.center h3{
+  font-size: 18px;
+  font-weight: 700;
+}
+.center h3 span{
+  font-size: 9px;
+  font-weight: 400;
+  color: #aeaeae;
+}
+
+
+.center h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 16px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+}
+
+.tags button {
+    border: none; 
+    background-color: #e8e8e8; 
+    color: #222;
+    padding: 8px 12px;
+    font-size: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.bottom {
+    margin-top: auto; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    border-top: 1px solid #d7d7d7ce; 
+    padding-top: 20px; 
+}
+
+.bottom .details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.bottom h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+}
+
+.bottom p {
+    font-size: 13px;
+    color: #999;
+    font-weight: 500;
+}
+
+.bottom .apply-btn {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
