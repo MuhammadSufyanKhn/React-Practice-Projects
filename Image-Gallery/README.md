@@ -1,16 +1,84 @@
-# React + Vite
+# 📸 React Image Gallery with Pagination
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive **React Image Gallery** that fetches images from an external API and displays them with pagination controls (Next / Previous).
+This project demonstrates the use of **React Hooks**, **API calls**, and **state management** in a clean UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* Fetch images from an API
+* Pagination (Next / Previous buttons)
+* Loading state handling
+* Responsive grid layout
+* External image links
+* Built with modern React (Hooks)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **React JS**
+* **Axios**
+* **Tailwind CSS**
+* **Picsum Photos API**
+
+---
+
+## ⚙️ Installation
+
+Follow these steps to run the project locally:
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/your-username/react-image-gallery.git
+```
+
+### 2. Navigate to the project folder
+
+```
+cd react-image-gallery
+```
+
+### 3. Install dependencies
+
+```
+npm install
+```
+
+### 4. Start the development server
+
+```
+npm run dev
+```
+
+The app will run on:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🔌 API Used
+
+This project uses the **Picsum Photos API** to fetch images.
+
+Example API request:
+
+```
+https://picsum.photos/v2/list?page=1&limit=12
+```
+
+---
+
+## 🎮 How It Works
+
+* The app fetches images using **Axios**
+* Images are stored in React state
+* When the **Next** or **Previous** button is clicked:
+
+  * The page number updates
+  * New images are fetched
+  * Loading message is displayed until data arrives
